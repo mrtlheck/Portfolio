@@ -40,6 +40,11 @@ body {
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     /* ---------------------------------------------------------- */
 }
+
+h2 {
+    text-transform: uppercase;
+    text-align: center;
+}
 #navbar {
     position: fixed;
     /* background-color: lightcoral; */
@@ -72,17 +77,18 @@ body {
 }
 
 #container {
-    width: auto;
+    /* width: auto; */
+    padding: 0 1rem;
 }
 
-nav ul li {
+#navbar ul li {
     /* background-color: red; */
     height: 1.25em;
     margin: 1em;
     padding-right: 1.5rem;
 }
 
-nav a {
+#navbar a {
     color: black;
     font-weight: bold;
     text-decoration: none;
@@ -116,11 +122,44 @@ section {
     text-align: center;
 }
 
+#profile-link {
+    text-align: center;
+}
+
+#profile-link a {
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+}
+
+#profile-link a:hover {
+    color: black;
+    background-color: rgb(167, 161, 161);
+    font-weight: bold;
+
+}
 
 #projects {
     /* border: 1px solid green; */
     font-size: 1rem;
+    
 }
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    grid-gap: .5rem;
+}
+
+.project-tile {
+    /* border: 1px solid red; */
+    /* background-color: var(--bk-color); */
+    height: max-content;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
 
 #contact {
     /* border: 1px solid blue; */
@@ -130,5 +169,10 @@ section {
 @media screen and (max-width: 700px){
     .logo {
         font-size: 1.5rem;
+    }
+
+    #navbar ul li {
+        font-size: .8em;
+        padding-right: .75rem;
     }
 }
