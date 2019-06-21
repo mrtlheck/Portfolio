@@ -127,6 +127,7 @@ section {
 }
 
 #profile-link a {
+    text-align: center;
     text-decoration: none;
     color: white;
     text-transform: uppercase;
