@@ -122,20 +122,21 @@ section {
     text-align: center;
 }
 
-#profile-link {
+.profileLink {
     text-align: center;
 }
 
-#profile-link a {
-    text-align: center;
+#profile-link {
+    /* text-align: center; */
     text-decoration: none;
     color: white;
     text-transform: uppercase;
 }
 
-#profile-link a:hover {
+#profile-link:hover {
     color: black;
     background-color: rgb(167, 161, 161);
+    border-radius: 8%;
     font-weight: bold;
 
 }
