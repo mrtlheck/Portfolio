@@ -155,12 +155,20 @@ section {
 }
 
 .project-tile {
-    /* border: 1px solid red; */
+    border: 1px solid red;
     /* background-color: var(--bk-color); */
-    height: max-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+  }
+
+.project-tile a {
     display: flex;
     justify-content: center;
-    flex-direction: column;
+    align-items: center;
+    width: max-content;
 }
 
 
